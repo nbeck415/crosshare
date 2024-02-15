@@ -3,6 +3,8 @@ version: '3.8'
 services:
   devLive:
     container_name: crosshare-dev-live-firebase
+    labels:
+      shipyard.route: '/'
     profiles:
       - devLive
     environment:
